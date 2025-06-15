@@ -14,6 +14,10 @@ app.get('/', (req, res) => {
 app.get('/hello',(req,res)=>{
    res.send('hello world 🚀');
 });
+app.get('/return',(req,res)=>{
+   res.send('Hi, this is Hello World 🚀');
+});
+
 // Sample POST route
 app.post('/echo', (req, res) => {
   res.json({ received: req.body });
